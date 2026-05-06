@@ -29,7 +29,7 @@ export default function Logos() {
                <img 
                  src={partner.logo} 
                  alt={partner.name} 
-                 className="max-h-full max-w-[100px] opacity-40 group-hover:opacity-100 transition-all pointer-events-none"
+                 className="max-h-full max-w-25 opacity-40 group-hover:opacity-100 transition-all pointer-events-none"
                  referrerPolicy="no-referrer"
                />
             </div>

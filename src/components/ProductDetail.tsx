@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowLeft, CheckCircle2, Cpu, Wind, Droplets } from 'lucide-react';
 import { Product } from '../constants';
-import { SketchfabViewer } from './ui/sketchfab-viewer';
 
 interface ProductDetailProps {
   product: Product;
@@ -27,16 +26,18 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
         </button>
 
         <div className="grid lg:grid-cols-2 gap-20 items-start">
-          {/* Technical View / 3D Model */}
+          {/* Product Image */}
           <motion.div 
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             className={`rounded-[3rem] border-4 border-positivus-dark p-4 aspect-square relative shadow-[20px_20px_0px_0px_#191A23] ${product.bg} overflow-hidden`}
           >
-            <div className="w-full h-full rounded-[2.5rem] overflow-hidden border-2 border-positivus-dark shadow-inner bg-white">
-              <SketchfabViewer 
-                modelId="8e6355e260b841f0889ec1c6d5fca241" 
-                title={product.name}
+            <div className="w-full h-full rounded-[2.5rem] overflow-hidden border-2 border-positivus-dark shadow-inner bg-white flex items-center justify-center">
+              <img 
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
               />
             </div>
             
@@ -45,7 +46,7 @@ export default function ProductDetail({ product, onBack }: ProductDetailProps) {
             </div>
             
             <div className="absolute bottom-8 right-8 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border-2 border-positivus-dark text-[10px] font-black uppercase tracking-widest z-10 pointer-events-none">
-              Interactive 3D View
+              Product Image
             </div>
           </motion.div>
 

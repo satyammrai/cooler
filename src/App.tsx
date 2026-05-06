@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Features from './components/Features';
+import WhyChoose from './components/WhyChoose';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Logos from './components/Logos';
@@ -15,6 +17,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { PRODUCTS } from './constants';
 import { AnimatePresence, motion } from 'motion/react';
+import { PremiumLoader } from './components/ui/premium-loader';
 
 import { EngineeringAdvantages } from './components/ui/scrolling-animation';
 
@@ -45,26 +48,28 @@ export default function App() {
       <main className="pt-24">
         <AnimatePresence mode="wait">
           {currentView === 'home' && (
-            <motion.div 
-              key="home"
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-            >
-              <Hero />
-              <Logos />
-              <GallerySection />
-              <Services />
-              <div id="products-preview">
-                <Products onSelectProduct={handleSelectProduct} />
-              </div>
-              <CTASection />
-              <VideoScrollSection />
-              <WorkingProcess />
-              <EngineeringAdvantages />
-              <Team />
-              <Testimonials />
-              <Contact />
-            </motion.div>
-          )}
+  <motion.div 
+    key="home"
+    initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+  >
+    <Hero />
+    <Features />
+    <WhyChoose />
+    <Logos />
+    <GallerySection />
+    <Services />
+    <div id="products-preview">
+      <Products onSelectProduct={handleSelectProduct} />
+    </div>
+    <CTASection />
+    <VideoScrollSection />
+    <WorkingProcess />
+    <EngineeringAdvantages />
+    <Team />
+    <Testimonials />
+    <Contact />
+  </motion.div>
+)}
 
           {currentView === 'products' && (
             <motion.div 

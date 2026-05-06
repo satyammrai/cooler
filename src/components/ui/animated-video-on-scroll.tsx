@@ -105,7 +105,7 @@ export const ContainerAnimated = React.forwardRef<
         whileInView={"visible"}
         viewport={{ once: true }}
         style={{ y, ...style }}
-        transition={{ ...SPRING_TRANSITION_CONFIG, ...transition }}
+        transition={{ ...SPRING_TRANSITION_CONFIG, ...transition } as any}
         {...props}
       />
     )

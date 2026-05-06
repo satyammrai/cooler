@@ -14,6 +14,7 @@ export interface Product {
   tagBg: string;
   image: string;
   textColor?: string;
+  segment: 'antarctica' | 'himalaya';
 }
 
 export const PRODUCTS: Product[] = [
@@ -22,6 +23,7 @@ export const PRODUCTS: Product[] = [
     name: 'Arctic-X 500',
     category: 'Industrial',
     rating: 4.9,
+    segment: 'antarctica',
     features: ['High Static Pressure', '100L Tank', 'Auto-Drain', 'Heavy-duty axial fan'],
     specs: [
       { label: 'Air Delivery', value: '18,000 m³/hr' },
@@ -39,6 +41,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mist-Pro 2k',
     category: 'Commercial',
     rating: 4.8,
+    segment: 'himalaya',
     features: ['Ultra-Fine Mist', 'Smart IoT Control', 'Low Noise'],
     specs: [
       { label: 'Air Delivery', value: '12,000 m³/hr' },
@@ -56,6 +59,7 @@ export const PRODUCTS: Product[] = [
     name: 'HomeChill Z1',
     category: 'Residential',
     rating: 4.7,
+    segment: 'himalaya',
     features: ['Honeycomb Cooling', 'Remote Operation', 'Portable'],
     specs: [
       { label: 'Air Delivery', value: '4,500 m³/hr' },
@@ -74,6 +78,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cyclone Max',
     category: 'Industrial',
     rating: 4.9,
+    segment: 'antarctica',
     features: ['Turbo Airflow', 'Quad-Pad Cooling', 'Anti-Corrosive'],
     specs: [
       { label: 'Air Delivery', value: '22,000 m³/hr' },
@@ -91,6 +96,7 @@ export const PRODUCTS: Product[] = [
     name: 'Eco-Breeze V2',
     category: 'Residential',
     rating: 4.6,
+    segment: 'himalaya',
     features: ['Solar Ready', 'Air Purifier', 'Dust Filter'],
     specs: [
       { label: 'Efficiency', value: 'A++ Rated' },
@@ -108,6 +114,7 @@ export const PRODUCTS: Product[] = [
     name: 'Retail Tower',
     category: 'Commercial',
     rating: 4.7,
+    segment: 'himalaya',
     features: ['Vertical Design', 'Foot-Pedal Control', '360 Swing'],
     specs: [
       { label: 'Footprint', value: '1.5 sq. ft.' },
@@ -126,6 +133,7 @@ export const PRODUCTS: Product[] = [
     name: 'Desert-Storm',
     category: 'Industrial',
     rating: 5.0,
+    segment: 'antarctica',
     features: ['Arid Optimized', 'Grit Prevention', 'Steel Body'],
     specs: [
       { label: 'Operating Temp', value: 'Up to 60°C' },
@@ -143,6 +151,7 @@ export const PRODUCTS: Product[] = [
     name: 'Office-Quiet',
     category: 'Commercial',
     rating: 4.9,
+    segment: 'himalaya',
     features: ['Silent Fan', 'PM2.5 Sensor', 'App Control'],
     specs: [
       { label: 'Noise', value: '32 dB' },
@@ -160,6 +169,7 @@ export const PRODUCTS: Product[] = [
     name: 'Outdoor Party',
     category: 'Residential',
     rating: 4.5,
+    segment: 'himalaya',
     features: ['BT Speakers', 'Mood Lighting', 'Ice Chamber'],
     specs: [
       { label: 'Battery Life', value: '8 Hours' },
@@ -177,6 +187,7 @@ export const PRODUCTS: Product[] = [
     name: 'DataCenter D1',
     category: 'Industrial',
     rating: 4.8,
+    segment: 'antarctica',
     features: ['Rack Compatible', 'Redundant Pumps', 'SNMP Support'],
     specs: [
       { label: 'Form Factor', value: 'Portable Rack' },
