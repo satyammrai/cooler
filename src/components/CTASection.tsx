@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { SketchfabViewer } from './ui/sketchfab-viewer';
 
 export default function CTASection() {
   return (
@@ -21,12 +22,13 @@ export default function CTASection() {
              <motion.div 
                animate={{ y: [0, -10, 0] }}
                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-               className="w-full h-full bg-positivus-green rounded-[3rem] border-4 border-positivus-dark relative flex items-center justify-center p-8 shadow-[12px_12px_0px_0px_#191A23]"
+               className="w-full h-full bg-positivus-green rounded-[3rem] border-4 border-positivus-dark relative flex items-center justify-center p-4 shadow-[12px_12px_0px_0px_#191A23] overflow-hidden"
              >
-                <div className="w-full h-full border-4 border-dashed border-positivus-dark/20 rounded-2xl flex flex-col items-center justify-center gap-4">
-                   <div className="w-16 h-16 bg-white rounded-full border-4 border-positivus-dark" />
-                   <div className="w-1/2 h-4 bg-positivus-dark rounded-full" />
-                   <div className="w-1/3 h-2 bg-positivus-dark/20 rounded-full" />
+                <div className="w-full h-full border-2 border-dashed border-positivus-dark/20 rounded-2xl relative overflow-hidden bg-white/50 backdrop-blur-sm">
+                   <SketchfabViewer 
+                     modelId="8e6355e260b841f0889ec1c6d5fca241" 
+                     title="Kapsun Air Cooler Engineering Preview"
+                   />
                 </div>
              </motion.div>
           </div>

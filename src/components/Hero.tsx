@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { SketchfabViewer } from './ui/sketchfab-viewer';
+import { YouTubeEmbed } from './ui/youtube-embed';
 
 export default function Hero() {
   return (
@@ -37,12 +37,12 @@ export default function Hero() {
           className="relative hidden md:block"
         >
           <div className="relative z-10 w-full aspect-square flex items-center justify-center">
-            {/* 3D Model Viewer Replacement */}
+            {/* YouTube Video Loop Replacement */}
             <div className="w-[90%] h-[90%] bg-white rounded-[3rem] relative overflow-hidden p-4 border-4 border-positivus-dark shadow-[12px_12px_0px_0px_#191A23]">
               <div className="w-full h-full border-2 border-dashed border-positivus-dark/20 rounded-2xl relative overflow-hidden bg-white">
-                <SketchfabViewer 
-                  modelId="8e6355e260b841f0889ec1c6d5fca241" 
-                  title="Kapsun Air Cooler 3D Model"
+                <YouTubeEmbed 
+                  videoId="htAyDkCQ_fQ" 
+                  title="Kapsun Air Cooler Field Demo"
                 />
               </div>
             </div>
