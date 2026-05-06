@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-positivus-green: #B9FF66;
+  --color-positivus-dark: #191A23;
+  --color-positivus-grey: #F3F3F3;
+}
