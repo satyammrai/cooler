@@ -71,6 +71,7 @@ export default function App() {
   </motion.div>
 )}
 
+
           {currentView === 'products' && (
             <motion.div 
               key="products"
