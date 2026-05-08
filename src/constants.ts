@@ -1,10 +1,15 @@
 export interface Product {
   id: string;
   name: string;
+  modelCode: string;
   category: 'Industrial' | 'Commercial' | 'Residential';
   rating: number;
   features: string[];
   specs: {
+    label: string;
+    value: string;
+  }[];
+  fullSpecs?: {
     label: string;
     value: string;
   }[];
@@ -15,30 +20,160 @@ export interface Product {
   image: string;
   textColor?: string;
   segment: 'antarctica' | 'himalaya';
+  trending?: boolean;
+  warranty?: string;
+  applications?: string[];
+  benefits?: string[];
 }
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'arctic-x-500',
-    name: 'Arctic-X 500',
+    id: 'ak09lc',
+    name: 'Antarctica AK09LC',
+    modelCode: 'AK09LC',
     category: 'Industrial',
     rating: 4.9,
     segment: 'antarctica',
-    features: ['High Static Pressure', '100L Tank', 'Auto-Drain', 'Heavy-duty axial fan'],
+    trending: true,
+    warranty: '1200 Days',
+    features: ['30-Inch Aluminum Fan', 'Premium Knob Controls', 'Auto Swing Louver', 'Extended Cooling Pad', 'Low Maintenance'],
     specs: [
-      { label: 'Air Delivery', value: '18,000 m³/hr' },
+      { label: 'Tank Capacity', value: '90 Litr.' },
       { label: 'Cooling Area', value: '2,500 sq. ft.' },
-      { label: 'Power Consumption', value: '450 Watts' }
+      { label: 'Air Flow', value: '18,000 m³/h' }
     ],
-    description: 'The Arctic-X 500 is a thermal powerhouse designed for large-scale manufacturing floors.',
-    price: '$899',
-    bg: 'bg-positivus-grey',
-    tagBg: 'bg-positivus-green',
-    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=800&q=80',
+    fullSpecs: [
+      { label: 'Motor Type', value: 'Single Phase, 3 Speed' },
+      { label: 'Motor Rotation', value: '900 RPM' },
+      { label: 'Wattage', value: '490W' },
+      { label: 'Fan Type', value: 'Axial Fan' },
+      { label: 'Fan Noise', value: '68 db' },
+      { label: 'Cooling Pad Size', value: '1095 × 100 × 1180 mm' },
+      { label: 'Gross Weight', value: '54 Kgs' },
+      { label: 'Product Dimensions', value: '1130 × 705 × 1550 mm' }
+    ],
+    description: 'The ANTARCTICA AK09LC is a premium air cooler offering the perfect balance of cooling power and water efficiency. With its 90-liter tank and powerful 30-inch fan, it provides extended cooling for industrial spaces.',
+    price: '₹18,999',
+    bg: 'bg-blue-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak09lc.jpg',
+    applications: ['Industrial workshops', 'Manufacturing facilities', 'Commercial warehouses', 'Agricultural buildings'],
+    benefits: ['Eco-friendly cooling', 'Energy efficient', 'Low maintenance', 'Fast cooling effect (7-10°C reduction)']
+  },
+  {
+    id: 'ak09pc',
+    name: 'Antarctica AK09PC',
+    modelCode: 'AK09PC',
+    category: 'Commercial',
+    rating: 4.8,
+    segment: 'antarctica',
+    warranty: '1200 Days',
+    features: ['30-Inch Aluminum Fan', 'Portable Design', 'Auto Swing Louver', 'Premium Controls', 'Durable Construction'],
+    specs: [
+      { label: 'Tank Capacity', value: '90 Litr.' },
+      { label: 'Cooling Area', value: '2,200 sq. ft.' },
+      { label: 'Air Flow', value: '17,000 m³/h' }
+    ],
+    description: 'The ANTARCTICA AK09PC offers portable cooling excellence for commercial spaces with flexible deployment options.',
+    price: '₹17,499',
+    bg: 'bg-slate-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak09pc.jpg',
+    applications: ['Commercial spaces', 'Event venues', 'Temporary structures', 'Retail spaces'],
+    benefits: ['Portable and flexible', 'Energy efficient', 'Easy maintenance', 'Rapid cooling']
+  },
+  {
+    id: 'ak12lc',
+    name: 'Antarctica AK12LC',
+    modelCode: 'AK12LC',
+    category: 'Industrial',
+    rating: 4.9,
+    segment: 'antarctica',
+    warranty: '1200 Days',
+    features: ['Large Cooling Pad', 'Heavy Duty Motor', 'Triple Speed Control', 'Auto Drain System', 'Durable Frame'],
+    specs: [
+      { label: 'Tank Capacity', value: '120 Litr.' },
+      { label: 'Cooling Area', value: '3,200 sq. ft.' },
+      { label: 'Air Flow', value: '22,000 m³/h' }
+    ],
+    description: 'The ANTARCTICA AK12LC provides superior cooling performance for large industrial complexes with enhanced water tank capacity and airflow.',
+    price: '₹22,999',
+    bg: 'bg-cyan-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak12lc.jpg',
+    applications: ['Large manufacturing units', 'Heavy industrial zones', 'Warehouses', 'Large commercial spaces'],
+    benefits: ['High cooling capacity', 'Extended runtime', 'Heavy-duty construction', 'Cost-effective']
+  },
+  {
+    id: 'ak12pc',
+    name: 'Antarctica AK12PC',
+    modelCode: 'AK12PC',
+    category: 'Commercial',
+    rating: 4.8,
+    segment: 'antarctica',
+    warranty: '1200 Days',
+    features: ['Portable Platform', 'Adjustable Louver', 'Easy Maintenance', 'Triple Speed', 'Quality Cooling Pads'],
+    specs: [
+      { label: 'Tank Capacity', value: '120 Litr.' },
+      { label: 'Cooling Area', value: '3,000 sq. ft.' },
+      { label: 'Air Flow', value: '21,000 m³/h' }
+    ],
+    description: 'The ANTARCTICA AK12PC brings portability to commercial cooling with high-capacity water tank and powerful performance.',
+    price: '₹21,499',
+    bg: 'bg-indigo-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak12pc.jpg',
+    applications: ['Corporate offices', 'Shopping centers', 'Event management', 'Temporary setups'],
+    benefits: ['Highly portable', 'Professional cooling', 'Easy setup', 'Reliable performance']
+  },
+  {
+    id: 'ak20lc',
+    name: 'Antarctica AK20LC',
+    modelCode: 'AK20LC',
+    category: 'Industrial',
+    rating: 4.9,
+    segment: 'antarctica',
+    warranty: '1200 Days',
+    features: ['Premium Quality', 'Extended Pad Area', 'Robust Construction', 'High Efficiency', 'Advanced Motor'],
+    specs: [
+      { label: 'Tank Capacity', value: '200 Litr.' },
+      { label: 'Cooling Area', value: '4,500 sq. ft.' },
+      { label: 'Air Flow', value: '28,000 m³/h' }
+    ],
+    description: 'The ANTARCTICA AK20LC is the flagship industrial cooler delivering maximum cooling capacity for ultra-large spaces with superior efficiency.',
+    price: '₹28,999',
+    bg: 'bg-teal-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak20lc.jpg',
+    applications: ['Large factories', 'Mining operations', 'Construction sites', 'Outdoor industrial zones'],
+    benefits: ['Maximum cooling output', 'Extended operation time', 'Professional-grade', 'Cost-effective for large spaces']
+  },
+  {
+    id: 'ak20pc',
+    name: 'Antarctica AK20PC',
+    modelCode: 'AK20PC',
+    category: 'Commercial',
+    rating: 4.8,
+    segment: 'antarctica',
+    warranty: '1200 Days',
+    features: ['Mobile Base', 'Large Tank', 'Professional Design', 'Quiet Operation', 'Premium Build'],
+    specs: [
+      { label: 'Tank Capacity', value: '200 Litr.' },
+      { label: 'Cooling Area', value: '4,200 sq. ft.' },
+      { label: 'Air Flow', value: '27,000 m³/h' }
+    ],
+    description: 'The ANTARCTICA AK20PC offers premium commercial cooling with maximum tank capacity and professional-grade cooling performance.',
+    price: '₹27,499',
+    bg: 'bg-emerald-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/ak20pc.jpg',
+    applications: ['Convention centers', 'Large retail spaces', 'Industrial commercial zones', 'Major events'],
+    benefits: ['Enterprise-grade cooling', 'High portability', 'Professional appearance', 'Reliable & durable']
   },
   {
     id: 'mist-pro-2k',
     name: 'Mist-Pro 2k',
+    modelCode: 'MP-2K',
     category: 'Commercial',
     rating: 4.8,
     segment: 'himalaya',
@@ -50,13 +185,14 @@ export const PRODUCTS: Product[] = [
     ],
     description: 'Engineered for high-traffic commercial spaces with ultrasonic misting technology.',
     price: '$649',
-    bg: 'bg-positivus-green',
-    tagBg: 'bg-white',
-    image: 'https://images.unsplash.com/photo-1595461135849-bf08893fdc2c?w=800&q=80',
+    bg: 'bg-lime-50',
+    tagBg: 'bg-green-500',
+    image: '/images/coolers/mist-pro-2k.jpg',
   },
   {
     id: 'homechill-z1',
     name: 'HomeChill Z1',
+    modelCode: 'HC-Z1',
     category: 'Residential',
     rating: 4.7,
     segment: 'himalaya',
@@ -68,32 +204,15 @@ export const PRODUCTS: Product[] = [
     ],
     description: 'Brings laboratory-grade cooling to the residential sector with a 4D honeycomb matrix.',
     price: '$299',
-    bg: 'bg-positivus-dark',
+    bg: 'bg-slate-800',
     tagBg: 'bg-white',
     textColor: 'text-white',
-    image: 'https://images.unsplash.com/photo-1574635391489-4b551ac9e3f9?w=800&q=80',
-  },
-  {
-    id: 'cyclone-max',
-    name: 'Cyclone Max',
-    category: 'Industrial',
-    rating: 4.9,
-    segment: 'antarctica',
-    features: ['Turbo Airflow', 'Quad-Pad Cooling', 'Anti-Corrosive'],
-    specs: [
-      { label: 'Air Delivery', value: '22,000 m³/hr' },
-      { label: 'Cooling Area', value: '3,000 sq. ft.' },
-      { label: 'Tank Capacity', value: '150L' }
-    ],
-    description: 'Maximum velocity cooling for open-air construction sites and heavy welding zones.',
-    price: '$1,299',
-    bg: 'bg-positivus-grey',
-    tagBg: 'bg-positivus-green',
-    image: 'https://images.unsplash.com/photo-1495556650867-99590cea3657?w=800&q=80',
+    image: '/images/coolers/homechill-z1.jpg',
   },
   {
     id: 'eco-breeze-v2',
     name: 'Eco-Breeze V2',
+    modelCode: 'EB-V2',
     category: 'Residential',
     rating: 4.6,
     segment: 'himalaya',

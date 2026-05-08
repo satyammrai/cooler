@@ -4,12 +4,12 @@ import SectionHeader from './SectionHeader';
 
 export default function Logos() {
   const partners = [
-    { name: 'Amazon Robotics', logo: 'https://cdn.worldvectorlogo.com/logos/amazon-icon.svg' },
-    { name: 'Dribbble Labs', logo: 'https://cdn.worldvectorlogo.com/logos/dribbble-icon-1.svg' },
-    { name: 'HubSpot Industrial', logo: 'https://cdn.worldvectorlogo.com/logos/hubspot.svg' },
-    { name: 'Notion HQ', logo: 'https://cdn.worldvectorlogo.com/logos/notion-2.svg' },
-    { name: 'Netflix Tech', logo: 'https://cdn.worldvectorlogo.com/logos/netflix-3.svg' },
-    { name: 'Zoom Global', logo: 'https://cdn.worldvectorlogo.com/logos/zoom-communications-logo.svg' },
+    { name: 'Amazon Robotics', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
+    { name: 'Dribbble Labs', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
+    { name: 'HubSpot Industrial', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
+    { name: 'Notion HQ', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
+    { name: 'Netflix Tech', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
+    { name: 'Zoom Global', logo: 'https://im.ge/i/whatsapp-image-2026-05-08-at-95925-am-QM1jntW' },
   ];
 
   return (

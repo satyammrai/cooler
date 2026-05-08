@@ -45,7 +45,7 @@ export default function GallerySection() {
             alt: 'Modern residential interior with HomeChill unit',
         },
         {
-            src: 'https://images.unsplash.com/photo-1565608438257-fac3c27e3ef9?w=1280&q=80',
+            src: 'C:\Users\satyam\OneDrive\文档\Desktop\jalaj\cooler\coolers\AK09LC.webp.w',
             alt: 'Aerodynamics testing facility',
         },
     ];
