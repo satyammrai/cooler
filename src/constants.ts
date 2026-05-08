@@ -56,7 +56,7 @@ export const PRODUCTS: Product[] = [
     price: '₹18,999',
     bg: 'bg-blue-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak09lc.jpg',
+    image: '/images/coolers/ak09lc.webp',
     applications: ['Industrial workshops', 'Manufacturing facilities', 'Commercial warehouses', 'Agricultural buildings'],
     benefits: ['Eco-friendly cooling', 'Energy efficient', 'Low maintenance', 'Fast cooling effect (7-10°C reduction)']
   },
@@ -78,7 +78,7 @@ export const PRODUCTS: Product[] = [
     price: '₹17,499',
     bg: 'bg-slate-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak09pc.jpg',
+    image: '/images/coolers/ak09pc.webp',
     applications: ['Commercial spaces', 'Event venues', 'Temporary structures', 'Retail spaces'],
     benefits: ['Portable and flexible', 'Energy efficient', 'Easy maintenance', 'Rapid cooling']
   },
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
     price: '₹22,999',
     bg: 'bg-cyan-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak12lc.jpg',
+    image: '/images/coolers/ak12lc.webp',
     applications: ['Large manufacturing units', 'Heavy industrial zones', 'Warehouses', 'Large commercial spaces'],
     benefits: ['High cooling capacity', 'Extended runtime', 'Heavy-duty construction', 'Cost-effective']
   },
@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
     price: '₹21,499',
     bg: 'bg-indigo-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak12pc.jpg',
+    image: '/images/coolers/ak12pc.webp',
     applications: ['Corporate offices', 'Shopping centers', 'Event management', 'Temporary setups'],
     benefits: ['Highly portable', 'Professional cooling', 'Easy setup', 'Reliable performance']
   },
@@ -144,7 +144,7 @@ export const PRODUCTS: Product[] = [
     price: '₹28,999',
     bg: 'bg-teal-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak20lc.jpg',
+    image: '/images/coolers/ak20lc.webp',
     applications: ['Large factories', 'Mining operations', 'Construction sites', 'Outdoor industrial zones'],
     benefits: ['Maximum cooling output', 'Extended operation time', 'Professional-grade', 'Cost-effective for large spaces']
   },
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
     price: '₹27,499',
     bg: 'bg-emerald-50',
     tagBg: 'bg-green-500',
-    image: '/images/coolers/ak20pc.jpg',
+    image: '/images/coolers/ak20pc.webp',
     applications: ['Convention centers', 'Large retail spaces', 'Industrial commercial zones', 'Major events'],
     benefits: ['Enterprise-grade cooling', 'High portability', 'Professional appearance', 'Reliable & durable']
   },
